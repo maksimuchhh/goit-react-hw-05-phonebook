@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+.error {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  background-color: red;
+  color: black;
+  font-size: 16px;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+input {
+  margin-right: 15px;
+}
+h2 {
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.appear {
+  transform: translateX(-100%);
+}
+.appearActive {
+  transform: translateX(0);
+  transition: transform 500ms ease-in;
+}
+
+.enter {
+  transform: translateX(150%);
+  opacity: 0;
+}
+.enterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms ease-in;
+}
+.exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.exitActive {
+  opacity: 0;
+  transform: translateX(150%);
+  transition: all 250ms ease-in;
+}
